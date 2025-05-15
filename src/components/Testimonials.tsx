@@ -43,12 +43,12 @@ export default function TestimonialsComp () {
           transition={ { duration: 0.8 }}
           viewport={ { once: true }}
           className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-          <Marquee pauseOnHover className="[--duration:20s]" applyMask={false}>
+          <Marquee pauseOnHover className="[--duration:30s]" applyMask={false}>
             {firstRow.map((testimonial, i) => (
               <TestimonialCard key={i} testimonial={testimonial} />
             ))}
           </Marquee>
-          <Marquee reverse applyMask={false} pauseOnHover className="[--duration:20s]">
+          <Marquee reverse applyMask={false} pauseOnHover className="[--duration:30s]">
             {secondRow.map((testimonial, i) => (
               <TestimonialCard key={i} testimonial={testimonial} />
             ))}
