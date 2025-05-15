@@ -9,59 +9,16 @@ import {
   cn
 } from "@/lib/utils";
 
-
-interface Testimonial {
-  id: number;
-  name: string;
-  role: string;
-  company: string;
-  avatar: string;
-  content: string;
-  rating: number;
-}
-
-const testimonials: Testimonial[] = [{
-  id: 1,
-  name: "Emma Thompson",
-  role: "Product Manager",
-  company: "Tech Innovations",
-  avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1364&auto=format&fit=crop",
-  content: "Working with this developer was an absolute pleasure. They delivered our project ahead of schedule with exceptional quality and attention to detail. The 3D elements they added to our site have significantly improved user engagement.",
-  rating: 5
-},
-  {
-    id: 2,
-    name: "Michael Chen",
-    role: "CEO",
-    company: "StartupLaunch",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1374&auto=format&fit=crop",
-    content: "The developer transformed our outdated website into a modern, responsive platform that perfectly represents our brand. Their technical expertise and creative vision exceeded our expectations.",
-    rating: 5
-  },
-  {
-    id: 3,
-    name: "Sarah Johnson",
-    role: "Marketing Director",
-    company: "Creative Solutions",
-    avatar: "https://images.unsplash.com/photo-1554727242-741c14fa561c?q=80&w=1374&auto=format&fit=crop",
-    content: "We hired this developer to create an interactive product showcase, and the results were outstanding. The animations and 3D elements they implemented have helped us stand out from competitors and showcase our products in a unique way.",
-    rating: 4
-  },
-  {
-    id: 4,
-    name: "David Rodriguez",
-    role: "Technical Lead",
-    company: "EnterpriseWeb",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1374&auto=format&fit=crop",
-    content: "As a fellow developer, I was impressed by the clean, maintainable code and the thoughtful architecture of the project. Working together was seamless, and they brought valuable insights that elevated the final product.",
-    rating: 5
-  }];
-
-const firstRow = testimonials.slice(0, testimonials.length / 2);
-const secondRow = testimonials.slice(testimonials.length / 2);
+import {
+  Testimonials,
+} from "@/constant/testimonial"
 
 
-export default function Testimonials () {
+const firstRow = Testimonials.slice(0, Testimonials.length / 2);
+const secondRow = Testimonials.slice(Testimonials.length / 2);
+
+
+export default function TestimonialsComp () {
   return (
     <AnimatedSection className="py-20 w-full" id="testimonials">
 
@@ -138,11 +95,8 @@ export default function Testimonials () {
             />
         </div>
         <div>
-          <p className="font-medium">
+          <p className="font-medium capitalize">
             {testimonial.name}
-          </p>
-          <p className="text-xs text-foreground/60">
-            {testimonial.role}, {testimonial.company}
           </p>
         </div>
       </div>
