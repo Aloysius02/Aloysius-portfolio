@@ -31,7 +31,7 @@ type ProjectCategory = "frontend" | "fullstack" | "all";
 
 export default function ProjectsComp() {
   const [activeCategory,
-    setActiveCategory] = useState < ProjectCategory > ("all");
+    setActiveCategory] = useState < ProjectCategory > ("frontend");
 
   const filteredProjects = Projects.filter(
     (project) => activeCategory === "all" || project.category === activeCategory
