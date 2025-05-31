@@ -111,7 +111,7 @@ export default function ProjectsComp() {
                 transition={ { duration: 0.5, delay: index * 0.1 }}
                 >
                 {/* Project image */}
-                <div className="relative h-48 overflow-hidden border-b border">
+                <div className="relative h-48 overflow-hidden">
                   <img
                   src={project.image}
                   alt={project.title}
