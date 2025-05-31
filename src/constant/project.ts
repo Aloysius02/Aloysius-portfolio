@@ -12,7 +12,7 @@ export interface ProjectType {
 export const Projects: ProjectType[] = [{
   id: 1,
   title: "OptimoAI – AI SaaS Landing",
-  description: "A visually striking, responsive landing page built with React, Vite, and Tailwind CSS. Features include dark mode support, smooth UI elements, and a clean, modern layout designed to boost user engagement.",
+  description: "AA sleek, responsive landing page with dark mode, smooth UI, and modern design—built using React, Vite, and Tailwind CSS.",
   image: "/optimoai.jpg",
   tags: ["React",
     "Vite",
