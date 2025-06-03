@@ -151,7 +151,7 @@ export default function ProjectsComp() {
                 {/* Project tags */}
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map(tag => (
-                    <Badge key={tag} className="bg-accent text-foreground border border-border">{tag}</Badge>
+                    <Badge key={tag} className="bg-card text-foreground border border-border shadow">{tag}</Badge>
                   ))}
                 </div>
               </div>
