@@ -104,7 +104,7 @@ export default function ProjectsComp() {
             {filteredProjects.map((project, index) => (
               <motion.div
                 key={project.id}
-                className="rounded-2xl bg-card border-border border overflow-hidden group"
+                className="rounded-2xl bg-accent border-border border overflow-hidden group"
                 initial={ { opacity: 0, y: 20 }}
                 whileInView={ { opacity: 1, y: 0 }}
                 viewport={ { once: true }}
