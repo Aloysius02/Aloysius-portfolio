@@ -74,6 +74,58 @@ const Frontend: ProjectType[] = [{
 ];
 
 
+const Fullstack: ProjectType[] = [{
+  id: 1,
+  title: "Lumilearn – Learning management system",
+  description: "A modern Learning Management System (LMS) built for online education. Instructors can create and manage courses, while learners track their progress, complete lessons, and take quizzes—all within a clean, responsive interface.",
+  image: "/projects/lumilearn.jpg",
+  tags: [
+    "Nextjs",
+    "Sanity",
+    "Tailwind Css"
+    "TypeScript",
+  ],
+  demoUrl: "https://lumilearni.vercel.app/",
+  repoUrl: "https://github.com/Aloysius02/lumilearn.git",
+  category: "fullstack"
+},
+  {
+    id: 2,
+    title: "Threads Clone — Real-Time Community Discussions",
+    description: "A Next.js-powered discussion platform featuring seamless authentication with Clerk, nested threads for structured conversations, and real-time notifications. Users can create threads, comment, search, and engage in vibrant, structured conversations with fast, responsive performance.",
+    image: "/projects/threado.jpg",
+    tags: [
+      "Nextjs",
+      "Socket.io",
+      "Mongodb",
+      "TypeScript",
+      "Framer-motion",
+    ],
+    demoUrl: "https://threadoi.vercel.app/",
+    repoUrl: "https://github.com/Aloysius02/Threado.git",
+    category: "fullstack"
+  },
+  {
+    id: 3,
+    title: "Zapchat – chat application",
+    description: "A simple real-time chat application built with Socket.IO, enabling users to send and receive messages instantly through WebSocket connections.
+    ",
+    image: "/projects/zapchat.jpg",
+    tags: [
+      "Nextjs",
+      "Socket.io",
+      "Mongodb",
+      "TypeScript",
+      "Framer-motion",
+    ],
+    demoUrl: "https://zapchato.vercel.app",
+    repoUrl: "https://github.com/Aloysius02/zapchat.git",
+    category: "fullstack"
+  },
+];
+
+
 export const Projects: ProjectType[] = [
   ...Frontend,
+  ...Fullstack
 ]
