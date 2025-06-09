@@ -162,7 +162,7 @@ const SkillsSection = () => {
     <section
       ref={sectionRef}
       id="skills"
-      className=""
+      className="mt-[2rem]"
       >
       <div className="">
 

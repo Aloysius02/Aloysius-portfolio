@@ -27,7 +27,7 @@ export default function TestimonialsComp () {
         <SectionHeader
           title="Client Testimonials"
           >
-          Don’t just take my word for it—here’s what collaborators and clients have to say about working with me. Their feedback reflects my commitment to clean code, seamless collaboration, and delivering impactful solutions.
+          Don’t just take my word for it, here’s what collaborators and clients have to say about working with me. Their feedback reflects my commitment to clean code, seamless collaboration, and delivering impactful solutions.
         </SectionHeader>
 
         <motion.div

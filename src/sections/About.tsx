@@ -73,7 +73,7 @@ export default function About() {
               <br /><br />
           My toolkit includes modern technologies like React, Next.js, Node.js, Express, MongoDB etc, allowing me to architect scalable systems from concept to deployment. I enhance interactivity with smooth animations using GSAP and Framer Motion, ensuring engaging interfaces.
           <br /> <br />
-      What drives me is solving complex challenges with clean, efficient code—whether crafting intuitive UIs or designing RESTful APIs. I prioritize maintainable code, follow industry best practices, and stay updated with evolving web technologies to build future-proof solutions.
+      What drives me is solving complex challenges with clean, efficient code, whether crafting intuitive UIs or designing RESTful APIs. I prioritize maintainable code, follow industry best practices, and stay updated with evolving web technologies to build future-proof solutions.
     </SectionHeader>
   </div>
 
@@ -99,7 +99,6 @@ export default function About() {
     </div>
   </motion.div>
 </div>
-
 
 
 
