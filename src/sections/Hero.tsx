@@ -1,7 +1,7 @@
 import {
   motion
 } from "framer-motion";
-import AnimatedBlob from "./AnimatedBlob";
+import AnimatedBlob from "@/components/AnimatedBlob";
 import {
   ArrowDown
 } from "lucide-react";
@@ -48,7 +48,7 @@ export default function Hero() {
             transition={ { delay: 0.4, duration: 0.8 }}
             >
             <span className="text-gradient">Aloysius</span>
-            <span className="block mt-2">Full Stack Web Developer</span>
+            <span className="block mt-2">A Full Stack Web Developer</span>
           </motion.h1>
 
           <motion.p

@@ -6,19 +6,19 @@ export interface TestimonialType {
 }
 export const Testimonials: TestimonialType[] = [{
   id: 1,
-  name: "Sarah Johnson",
+  name: "Chosen Eqwin",
   avatar: "/profile.jpg",
   content: "Aloysius is a rare talent! He built our SaaS platform from scratch, combining elegant frontend design with a bulletproof backend. His code is so clean it could be a textbook example."
 },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "David Ndukwe",
     avatar: "/profile.jpg",
     content: "Working with Aloysius was transformative. He migrated our legacy system to a modern stack (React + Node) in half the estimated time while improving performance by 60%."
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
+    name: "Ezeogu Victor",
     avatar: "/profile.jpg",
     content: "Aloysius solved problems we didn't even know we had. His architectural decisions future-proofed our application and saved us countless hours of refactoring."
   },

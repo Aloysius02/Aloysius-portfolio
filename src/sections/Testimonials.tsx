@@ -3,7 +3,7 @@ import {
 } from "framer-motion";
 import {
   AnimatedSection
-} from "./AnimatedSection";
+} from "@/components/AnimatedSection";
 import Marquee from "@/components/ui/marque";
 import {
   cn
@@ -12,7 +12,7 @@ import {
 import {
   Testimonials,
 } from "@/constant/testimonial"
-
+import SectionHeader from "@/components/section-heading.tsx";
 
 const firstRow = Testimonials.slice(0, Testimonials.length / 2);
 const secondRow = Testimonials.slice(Testimonials.length / 2);
@@ -23,19 +23,12 @@ export default function TestimonialsComp () {
     <AnimatedSection className="py-20 w-full" id="testimonials">
 
       <div className="section-container relative z-10">
-        <motion.div
-          className="text-center mb-16"
-          initial={ { opacity: 0, y: 20 }}
-          whileInView={ { opacity: 1, y: 0 }}
-          transition={ { duration: 0.8 }}
-          viewport={ { once: true }}
+
+        <SectionHeader
+          title="Client Testimonials"
           >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Client Testimonials</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-6" />
-          <p className="max-w-2xl mx-auto text-muted-foreground">
-            Don't just take my word for it - here's what clients and colleagues have to say about working with me.
-          </p>
-        </motion.div>
+          Don’t just take my word for it—here’s what collaborators and clients have to say about working with me. Their feedback reflects my commitment to clean code, seamless collaboration, and delivering impactful solutions.
+        </SectionHeader>
 
         <motion.div
           initial={ { opacity: 0, y: 20 }}

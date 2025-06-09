@@ -6,6 +6,7 @@ import {
   useEffect,
   useRef
 } from "react";
+import SectionHeader from "@/components/section-heading.tsx";
 
 const SkillsSection = () => {
   const sectionRef = useRef(null);
@@ -164,24 +165,15 @@ const SkillsSection = () => {
       className=""
       >
       <div className="">
-        <motion.div
-          initial={ { opacity: 0,
-            y: 20 }}
-          animate={ { opacity: 1,
-            y: 0 }}
-          transition={ { duration: 0.5 }}
-          className="mb-12 text-center"
+
+        <SectionHeader
+          title="My Technical Skills"
           >
-          <h2 className="text-2xl font-semibold text-foreground text-center">
-            My Technical Skills
-          </h2>
-          <p className="mt-4 text-center mx-auto max-w-2xl  text-muted-foreground">
-            I've honed a diverse set of skills across the full stack development
-            spectrum. From crafting pixel-perfect UIs to building robust backend
-            systems, I combine technical expertise with creative problem-solving
-            to deliver exceptional digital experiences.
-          </p>
-        </motion.div>
+          I've honed a diverse set of skills across the full stack development
+          spectrum. From crafting pixel-perfect UIs to building robust backend
+          systems, I combine technical expertise with creative problem-solving
+          to deliver exceptional digital experiences.
+        </SectionHeader>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div

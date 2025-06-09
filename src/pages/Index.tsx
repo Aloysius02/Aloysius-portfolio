@@ -1,13 +1,13 @@
 import {
   useEffect
 } from "react";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Projects from "@/components/Projects";
-import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Header from "@/sections/Header";
+import Hero from "@/sections/Hero";
+import About from "@/sections/About";
+import Projects from "@/sections/Projects";
+import Testimonials from "@/sections/Testimonials";
+import Contact from "@/sections/Contact";
+import Footer from "@/sections/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import {
   ThemeProvider

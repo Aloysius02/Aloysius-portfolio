@@ -18,11 +18,10 @@ import {
 import {
   Badge
 } from "@/components/ui/badge";
-
 import {
   Projects,
 } from "@/constant/project"
-
+import SectionHeader from "@/components/section-heading.tsx";
 
 
 type ProjectCategory = "frontend" | "fullstack" | "all";
@@ -41,20 +40,14 @@ export default function ProjectsComp() {
   return (
     <section id="projects" className="py-20 bg-accent/30 w-full">
       <div className="section-container">
-        <motion.div
-          className="text-center mb-16"
-          initial={ { opacity: 0, y: 20 }}
-          whileInView={ { opacity: 1, y: 0 }}
-          transition={ { duration: 0.8 }}
-          viewport={ { once: true }}
+
+        <SectionHeader
+          title="My Projects"
           >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-6" />
-          <p className="max-w-2xl mx-auto text-muted-foreground">
-            Explore my recent work across frontend and backend development.
-            Each project reflects my ability to solve complex challenges through clean code, scalable systems, and innovative problem-solving.
-          </p>
-        </motion.div>
+          Explore my recent work across frontend and backend development.
+          Each project reflects my ability to solve complex challenges through clean code, scalable systems, and innovative problem-solving.
+        </SectionHeader>
+
 
         <div className="flex justify-center mb-10">
           <div className="inline-flex p-1 bg-accent rounded-lg">

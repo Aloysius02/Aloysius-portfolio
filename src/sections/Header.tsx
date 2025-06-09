@@ -7,7 +7,7 @@ import {
 } from "framer-motion";
 import {
   ThemeToggle
-} from "./ThemeToggle";
+} from "@/components/ThemeToggle";
 import {
   ScrollProgress
 } from "@/components/scrollProgress"
