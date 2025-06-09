@@ -3,8 +3,8 @@ import {
 } from "framer-motion";
 import {
   Github,
-  Instagram,
-  Linkedin,
+  Whatsapp,
+  //Linkedin,
   Mail,
   Twitter
 } from "lucide-react";
@@ -18,20 +18,20 @@ export default function Footer() {
     href: "https://github.com/Aloysius02",
     label: "GitHub"
   },
-    {
-      icon: <Linkedin className="h-5 w-5" />,
-      href: "#",
-      label: "LinkedIn"
-    },
+    // {
+    //   icon: <Linkedin className="h-5 w-5" />,
+    //   href: "#",
+    //   label: "LinkedIn"
+    // },
     {
       icon: <Twitter className="h-5 w-5" />,
-      href: "#",
+      href: "https://x.com/AloysiusEzeogu?t=97cFiLPDL5A5Zpl-tgR0AA&s=09",
       label: "Twitter"
     },
     {
-      icon: <Instagram className="h-5 w-5" />,
-      href: "#",
-      label: "Instagram"
+      icon: <Whatsapp className="h-5 w-5" />,
+      href: "https://wa.me/2349160125602?text=Hi%21%20I%20just%20visited%20your%20portfolio%20and%20I%27m%20interested%20in%20working%20with%20you.",
+      label: "WhatsApp"
     },
     {
       icon: <Mail className="h-5 w-5" />,

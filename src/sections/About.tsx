@@ -66,7 +66,7 @@ export default function About() {
 
       <div className="section-container relative z-10">
 
-        <div className="w-full flex flex-col md:flex-row gap-6 md:gap-8 ">
+        <div className="w-full flex flex-col md:items-center md:flex-row gap-6 md:gap-8 ">
           <div className="md:flex-[1.5]">
             <SectionHeader title="About Me">
               I'm a passionate Full-Stack Web Developer dedicated to transforming ideas into robust, user-centric digital solutions. With expertise in both frontend and backend development, I build responsive, high-performance web applications that deliver seamless user experiences.
@@ -104,7 +104,7 @@ export default function About() {
 
 
   <div className="grid grid-cols-1 gap-16">
-    <div className="mt-6 space-y-8">
+    <div className="mt-[2rem] space-y-8">
 
       <Skills />
 
