@@ -15,7 +15,7 @@ export default function Footer() {
 
   const socialLinks = [{
     icon: <Github className="h-5 w-5" />,
-    href: "#",
+    href: "https://github.com/Aloysius02",
     label: "GitHub"
   },
     {
@@ -35,7 +35,7 @@ export default function Footer() {
     },
     {
       icon: <Mail className="h-5 w-5" />,
-      href: "mailto:contact@example.com",
+      href: "mailto: chinemeremaloysius@gmail.com.com",
       label: "Email"
     },
   ];

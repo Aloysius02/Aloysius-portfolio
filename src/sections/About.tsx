@@ -66,39 +66,44 @@ export default function About() {
 
       <div className="section-container relative z-10">
 
-        <SectionHeader
-          title="About Me"
-          >
-          I'm a passionate Full-Stack Web Developer dedicated to transforming ideas into robust, user-centric digital solutions. With expertise in both frontend and backend development, I build responsive, high-performance web applications that deliver seamless user experiences.
-          <br /><br />
-      My toolkit includes modern technologies like React, Next.js, Node.js, Express, MongoDB etc, allowing me to architect scalable systems from concept to deployment. I enhance interactivity with smooth animations using **GSAP and Framer Motion**, ensuring engaging interfaces.
-      <br /> <br />
-  What drives me is solving complex challenges with clean, efficient code—whether crafting intuitive UIs or designing RESTful APIs. I prioritize maintainable code, follow industry best practices, and stay updated with evolving web technologies to build future-proof solutions.
-</SectionHeader>
+        <div className="w-full flex flex-col md:flex-row gap-6 md:gap-8 ">
+          <div className="md:flex-[1.5]">
+            <SectionHeader title="About Me">
+              I'm a passionate Full-Stack Web Developer dedicated to transforming ideas into robust, user-centric digital solutions. With expertise in both frontend and backend development, I build responsive, high-performance web applications that deliver seamless user experiences.
+              <br /><br />
+          My toolkit includes modern technologies like React, Next.js, Node.js, Express, MongoDB etc, allowing me to architect scalable systems from concept to deployment. I enhance interactivity with smooth animations using GSAP and Framer Motion, ensuring engaging interfaces.
+          <br /> <br />
+      What drives me is solving complex challenges with clean, efficient code—whether crafting intuitive UIs or designing RESTful APIs. I prioritize maintainable code, follow industry best practices, and stay updated with evolving web technologies to build future-proof solutions.
+    </SectionHeader>
+  </div>
 
-  <div className="grid grid-cols-1 gap-16">
-    <motion.div
-      className="flex justify-center"
-      initial={ { opacity: 0, scale: 0.8 }}
-      whileInView={ { opacity: 1, scale: 1 }}
-      transition={ { duration: 0.8 }}
-      viewport={ { once: true }}
-      >
-      <div className="relative">
-        <AnimatedBlob
-          imageUrl="/aloy.jpg"
-          size="md"
-          className=""
-          />
-        <div className="absolute -bottom-4 -right-4 glass rounded-lg p-3 shadow-lg">
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-            <span className="text-sm font-medium">Available for work</span>
-          </div>
+  <motion.div
+    className="flex justify-center md:flex-[1]"
+    initial={ { opacity: 0, scale: 0.8 }}
+    whileInView={ { opacity: 1, scale: 1 }}
+    transition={ { duration: 0.8 }}
+    viewport={ { once: true }}
+    >
+    <div className="relative">
+      <AnimatedBlob
+        imageUrl="/aloy.jpg"
+        size="md"
+        className=""
+        />
+      <div className="absolute -bottom-4 -right-4 glass rounded-lg p-3 shadow-lg">
+        <div className="flex items-center gap-2">
+          <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+          <span className="text-sm font-medium">Available for work</span>
         </div>
       </div>
-    </motion.div>
+    </div>
+  </motion.div>
+</div>
 
+
+
+
+  <div className="grid grid-cols-1 gap-16">
     <div className="mt-6 space-y-8">
 
       <Skills />
