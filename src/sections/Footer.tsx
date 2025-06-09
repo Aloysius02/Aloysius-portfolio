@@ -3,12 +3,15 @@ import {
 } from "framer-motion";
 import {
   Github,
-  Whatsapp,
   //Linkedin,
   Mail,
   Twitter
 } from "lucide-react";
 import Logo from "@/components/logo"
+import {
+  FaWhatsapp
+} from "react-icons/fa";
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -29,7 +32,7 @@ export default function Footer() {
       label: "Twitter"
     },
     {
-      icon: <Whatsapp className="h-5 w-5" />,
+      icon: <FaWhatsapp className="h-5 w-5" />,
       href: "https://wa.me/2349160125602?text=Hi%21%20I%20just%20visited%20your%20portfolio%20and%20I%27m%20interested%20in%20working%20with%20you.",
       label: "WhatsApp"
     },
