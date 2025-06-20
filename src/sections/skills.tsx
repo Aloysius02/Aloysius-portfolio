@@ -52,7 +52,7 @@ const SkillsSection = () => {
         name: "TypeScript", level: 60
       },
       {
-        name: "React", level: 75
+        name: "React", level: 60
       },
       {
         name: "Nextjs", level: 70
@@ -68,22 +68,22 @@ const SkillsSection = () => {
       },
     ],
     backend: [{
-      name: "Nodejs", level: 70
+      name: "Nodejs", level: 50
     },
       {
-        name: "Expressjs", level: 80
+        name: "Expressjs", level: 60
       },
       {
-        name: "MongoDB", level: 70
+        name: "MongoDB", level: 60
       },
       {
         name: "REST APIs", level: 80
       },
       {
-        name: "Postresql", level: 60
+        name: "Postresql", level: 40
       },
       {
-        name: "Sanity", level: 70
+        name: "Sanity", level: 50
       },
     ],
   };
